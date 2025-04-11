@@ -1,0 +1,238 @@
+/* HEADER TRANSPARENTE */
+.header{
+    background: transparent;
+    border: none;
+    color: var(--texto-claro, #fff);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.modo-claro {
+    background: #ffffff;
+    color: #0d1b2a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--texto-claro, #fff);
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+}
+
+body.modo-claro .logo {
+    color: #000;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+/* ENLACES DEL MENÚ */
+.menu-principal li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-principal li a:hover {
+    color: #ffffff;
+}
+
+/* BOTÓN TRANSPARENTE */
+.boton-transparente {
+    background: none;
+    color: #b6b6b6;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.boton-transparente:hover {
+    background: rgba(2, 2, 2, 0.2);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+/* MODO CLARO - ENLACES */
+body.modo-claro .menu-principal li a,
+body.modo-claro .boton-transparente {
+    color: #333;
+}
+
+body.modo-claro .boton-transparente:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
+}
+/* TOGGLE SWITCH */
+.toggle-container {
+    width: 60px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    background-color: #141414; /* Fondo oscuro */
+    border-radius: 30px; /* Bordes redondeados */
+    position: absolute; /* Cambia a posición absoluta */
+    top: 10px; /* Ajusta la posición más arriba */
+    right: 20px; /* Ajusta la posición más a la derecha */
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease; /* Transición suave */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+/* Hover para el botón */
+.toggle-container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+}
+.toggle-btn {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #000000;
+    transition: left 0.4s ease, color 0.4s ease;
+}
+
+.toggle-container.night .toggle-btn {
+    left: 32px;
+    color: #ffbc2c;
+}
+
+.toggle-container .fa-sun {
+    display: none;
+}
+
+.toggle-container.night .fa-moon {
+    display: none;
+}
+
+.toggle-container.night .fa-sun {
+    display: inline;
+}
+
+.menu-principal li .toggle-container {
+    margin-top: 5px;
+}
+/* Dropdown (Clases) */
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute;
+    background-color: #1f1f1f; /* Fondo negro por defecto (modo día) */
+    list-style: none;
+    padding: 0; /* Elimina el espaciado interno */
+    margin: 0; /* Elimina márgenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para el submenú */
+    font-size: 0.9rem; /* Tamaño del texto */
+    top: 30px; /* Mueve el submenú más arriba */
+    z-index: 1000; /* Asegura que el submenú esté encima de otros elementos */
+}
+/* Mostrar el submenú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+/* Estilo de los enlaces del submenú */
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #fff; /* Letras blancas por defecto (modo día) */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+    display: block;
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-radius: 3px; /* Bordes redondeados para los enlaces */
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Hover para los enlaces */
+.dropdown-menu li a:hover {
+    background-color: #fff; /* Fondo blanco al pasar el mouse */
+    color: #000; /* Letras negras al pasar el mouse */
+}
+/* Botón de modo oscuro/día */
+.toggle-container {
+    width: 50px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    background-color: #007bff; /* Fondo azul */
+    border-radius: 20px; /* Bordes redondeados */
+    border: 1.5px solid #00000000; /* Borde negro */
+    box-shadow: #000000;
+    top: 10px;
+    left: -20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px; /* Espaciado interno */
+    
+    /* Ajusta la posición del botón */
+    margin-left: 1rem; /* Espaciado entre el menú y el botón */
+    top: -8px; /* Baja el botón más abajo */
+    position: relative; /* Asegura que el botón se alinee con el menú */
+    }
+    .toggle-container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+    }
+    .toggle-container.night {
+      background-color:  #ff6600;
+      border-color: #ffffff00;
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Sombra más clara en modo noche */
+    }
+    .toggle-container.night .toggle-btn {
+    background-color: #00000000; /* Fondo negro para el círculo en modo noche */
+    left: 25px;
+    }
+    /* Oculta el sol en modo noche */
+    .toggle-container.night .fa-sun {
+    display: none;
+    }
+    /* Oculta la luna por defecto */
+    .toggle-container .fa-moon {
+    display: none;
+    color: #ffffff;
+    font-size: 1.5rem; /* Tamaño de la luna */
+    }
+    /* Muestra la luna en modo noche */
+    .toggle-container.night .fa-moon {
+    display: inline;
+    }

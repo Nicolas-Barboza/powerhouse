@@ -1,0 +1,212 @@
+/* Estilos globales para el modo oscuro */
+body.modo-oscuro {
+    background-color: #313131; /* Fondo gris claro */
+    color: #0d1b2a; /* Texto oscuro */
+}
+/* Estilos para modo noche */
+body.modo-oscuro .dropdown-menu {
+    background-color: #fff; /* Fondo blanco en modo noche */
+  }
+  
+  body.modo-oscuro .dropdown-menu li a {
+    color: #000; /* Letras negras en modo noche */
+  }
+  
+  body.modo-oscuro .dropdown-menu li a:hover {
+    background-color: #000; /* Fondo negro al pasar el mouse */
+    color: #fff; /* Letras blancas al pasar el mouse */
+  }
+  body.modo-oscuro .clases-destacadas {
+    background-color: inherit; /* Hereda el color de fondo del body */
+    color: #fff; /* Texto blanco */
+    padding: 4rem 2rem; /* Espaciado superior e inferior */
+    text-align: center; /* Centrado del texto */
+}
+
+body.modo-oscuro .clases-destacadas-header h2 {
+    font-size: 3rem; /* Título más grande */
+    color: #fff; /* Título en blanco */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+body.modo-oscuro .clases-destacadas-header p {
+    font-size: 1.5rem; /* Texto más grande */
+    color: #ccc; /* Texto gris claro */
+    line-height: 1.8; /* Espaciado entre líneas */
+    margin-bottom: 3rem; /* Espaciado inferior */
+}
+
+body.modo-oscuro .tarjetas-clases {
+    display: flex; /* Diseño en fila */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 2rem; /* Espaciado entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+}
+
+body.modo-oscuro .card {
+    background-color: #2a2a2a; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    max-width: 350px; /* Ancho máximo de las tarjetas */
+    text-align: left; /* Alineación del texto */
+}
+
+body.modo-oscuro .card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 12px 24px rgba(255, 165, 0, 0.5); /* Sombra naranja más pronunciada al pasar el mouse */
+}
+body.modo-oscuro .card img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+body.modo-oscuro .card-content {
+    padding: 2rem; /* Espaciado interno más grande */
+}
+
+body.modo-oscuro .card-content h3 {
+    font-size: 1.8rem; /* Título más grande */
+    margin-top: 0.5rem; /* Menos espacio superior */
+    margin-bottom: 1.2rem; /* Espaciado inferior */
+    color: #fff; /* Título blanco */
+}
+
+body.modo-oscuro .card-content p {
+    font-size: 1.2rem; /* Texto más grande */
+    color: #ccc; /* Texto gris claro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+body.modo-oscuro .contador-section {
+    background-color: #2a2a2a; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra pronunciada */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 1rem; /* Aumenta el espaciado interno */
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem; /* Aumenta la separación superior */
+    margin-bottom: 4rem; /* Aumenta la separación inferior */
+    max-width: 1200px; /* Haz la sección más larga */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+body.modo-oscuro .contador-box {
+    text-align: center;
+    max-width: 200px;
+}
+
+body.modo-oscuro .icono-img {
+    width: 60px; /* Tamaño uniforme */
+    height: 60px;
+    filter: invert(1); /* Íconos blancos */
+    margin-bottom: 1rem;
+}
+
+body.modo-oscuro .contador {
+    font-size: 2.5rem; /* Tamaño del número */
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+}
+
+body.modo-oscuro .simbolo {
+    font-size: 1.5rem; /* Tamaño del símbolo */
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    margin-left: 0.2rem;
+}
+
+body.modo-oscuro .contador + p {
+    font-size: 1rem; /* Tamaño del texto descriptivo */
+    color: #ccc; /* Texto gris claro */
+    margin-top: 0.5rem;
+}
+
+body.modo-oscuro .testimonios {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 2rem; /* Espaciado interno */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra pronunciada */
+    margin: 4rem auto; /* Margen superior e inferior */
+    max-width: 600px; /* Ancho máximo */
+    text-align: center;
+}
+body.modo-oscuro .testimonios:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 12px 24px rgba(255, 165, 0, 0.5); /* Sombra naranja más pronunciada al pasar el mouse */
+}
+body.modo-oscuro .testimonio {
+    background-color: #00000000; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1.5rem; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    margin: 0 auto; /* Centrado */
+    max-width: 700px; /* Ancho máximo */
+}
+
+body.modo-oscuro .testimonio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; /* Espaciado debajo del encabezado */
+}
+
+body.modo-oscuro .icono-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Ícono circular */
+    margin-right: 1rem;
+    filter: invert(1); /* Íconos blancos */
+
+}
+
+body.modo-oscuro .testimonio-info strong {
+    font-size: 1.2rem;
+    color: #fff; /* Nombre en blanco */
+}
+
+body.modo-oscuro .estrellas {
+    color: #ffbc2c; /* Estrellas amarillas */
+    font-size: 1rem;
+}
+
+body.modo-oscuro .testimonio p {
+    font-size: 1rem;
+    color: #ccc; /* Texto gris claro */
+    line-height: 1.5;
+}
+.modo-oscuro .blog-header h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.modo-oscuro .blog-header p {
+  color: #ccc;
+}
+
+.modo-oscuro .tag {
+  border-color: #ff4d00;
+  color: #fff;
+}
+
+.modo-oscuro .tag:hover,
+.modo-oscuro .tag.active {
+  background-color: #ff4d00;
+}
+
+.modo-oscuro .post {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.modo-oscuro .post-content p {
+  color: #ccc;
+}

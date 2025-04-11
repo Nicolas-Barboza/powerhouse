@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <head>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/precios.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/modo-claro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  </head>
+</head>
+<body class="modo-claro">
+  <div id="header-placeholder"></div>
+      
+<main class="container precios-container">
+  <div>
+      <div>
+          <h1 class="title-precios">ELEGÍ TU PLAN</h1>
+          <p class="subtitulo-precio" >Elige el plan que mejor se adapte a tus necesidades</p>
+
+      </div>
+      <div class="switch-container">
+          <span class="label-switch">Mensual</span>
+          <label class="switch">
+            <input type="checkbox" id="toggleDescuento">
+            <span class="slider-switch"></span>
+          </label>
+          <span class="label-switch">Anual</span>
+      </div>  
+  </div>
+  <br>
+    
+      <div class="precios">
+        <!-- Plan Básico -->
+        <div class="card basic">
+            <div class="etiqueta-plan">Mensual</div>
+            <div class="nombre-plan">PLAN BÁSICO</div>
+            <div class="precio" data-mensual="59" data-anual="49"></div>
+            <div class="sin-impuestos">Precio sin impuestos</div>
+            <button class="btn-ordenar">Ordenar ahora</button>
+            <div class="linea"></div>
+            <ul class="caracteristicas">
+                <li>Acceso limitado</li>
+                <li class="x">Sin tutorías</li>
+                <li>Material incluido</li>
+            </ul>
+        </div>
+    
+        <!-- Plan Estándar -->
+        <div class="card stand">
+            <div class="etiqueta-plan">Mensual</div>
+            <div class="nombre-plan">PLAN ESTÁNDAR</div>
+            <div class="precio" data-mensual="69" data-anual="59"></div>
+            <div class="sin-impuestos">Precio sin impuestos</div>
+            <button class="btn-ordenar">Ordenar ahora</button>
+            <div class="linea"></div>
+            <ul class="caracteristicas">
+                <li>Acceso completo</li>
+                <li>Tutorías grupales</li>
+                <li>Material incluido</li>
+            </ul>
+        </div>
+    
+        <!-- Plan Premium -->
+        <div class="card premium">
+            <div class="etiqueta-plan">Mensual</div>
+            <div class="nombre-plan">PLAN PREMIUM</div>
+            <div class="precio" data-mensual="99" data-anual="79"></div>
+            <div class="sin-impuestos">Precio sin impuestos</div>
+            <button class="btn-ordenar">Ordenar ahora</button>
+            <div class="linea"></div>
+            <ul class="caracteristicas">
+                <li>Acceso total</li>
+                <li>Tutorías 1 a 1</li>
+                <li>Contenido exclusivo</li>
+            </ul>
+        </div>
+    </div>
+              
+   </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/cargar-modulo.js"></script>
+  <script src="js/modo.js"></script>
+  <script src="js/precios.js"></script>
+    
+</body>
+</html>

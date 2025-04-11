@@ -1,0 +1,152 @@
+/* Footer - Modo Oscuro */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col.mapa {
+    flex: 1 1 25%;
+}
+.footer-col.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer-derecha {
+    flex: 1 1 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-col.newsletter {
+    flex: 1 1 100%;
+    text-align: left;
+}
+
+.footer-col.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-col.newsletter input[type="email"] {
+    width: 94.4%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.footer-col.newsletter button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-col.newsletter button:hover {
+    background-color: #e64a19;
+}
+
+.footer-col.contacto-footer,
+.footer-col.redes {
+    flex: 1 1 45%;
+}
+
+.footer-col.contacto-footer p,
+.footer-col.redes a {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-col.redes a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col.redes a:hover {
+    color: #ffbc2c;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.5rem;
+    color: #aaa;
+    width: 100%;
+}
+
+/* Footer - Modo Claro */
+body.modo-claro footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1.5rem 1rem;
+    border-top: 2px solid #ddd;
+}
+
+body.modo-claro .footer-col.mapa iframe {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+body.modo-claro .footer-col.newsletter input[type="email"] {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.modo-claro .footer-col.newsletter button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.modo-claro .footer-col.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+body.modo-claro .footer-col.contacto-footer p,
+body.modo-claro .footer-col.redes a {
+    color: #555;
+}
+
+body.modo-claro .footer-col.redes a:hover {
+    color: #007bff;
+}
+
+body.modo-claro .footer-bottom {
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+    text-align: center;
+}

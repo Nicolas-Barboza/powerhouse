@@ -1,0 +1,135 @@
+/* Contenedor principal */
+/* Contenedor principal */
+.trainers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem; /* Espaciado entre tarjetas */
+    padding: 6rem; /* Separación del footer */
+    margin-top: -5rem; /* Reduce el espacio entre el texto superior y las tarjetas */
+}
+/* Tarjeta */
+.trainer-card {
+    width: 300px; /* Ancho de la tarjeta */
+    height: 400px; /* Altura de la tarjeta */
+    perspective: 1000px; /* Perspectiva para el giro */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: #2b2b2b;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.trainer-card:hover .card-inner {
+    transform: rotateY(180deg); /* Gira la tarjeta */
+}
+
+/* Caras */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+
+
+.card-front img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+    border-radius: 20px; /* Mantiene los bordes redondeados */
+}
+
+.card-front h2 {
+    margin-top: -3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: -1.5rem;
+    border-radius: 10px;
+}
+
+/* Parte trasera */
+.card-back {
+    background-color: #1f1f1f;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+/* Nombre y descripción */
+.card-back h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem; /* Agrega un pequeño margen superior */
+}
+
+.card-back p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Habilidades */
+.skills p {
+    margin: 0.2rem 0;
+    font-weight: 600;
+}
+
+.skill-bar {
+    background-color: #333; /* Fondo más oscuro */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #cc5500; /* Naranja oscuro */
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* Rating */
+.rating {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    animation: blink 1s infinite; /* Parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Título */
+.title-trainers {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem; /* Reduce el espacio superior del título */
+    margin-bottom: 1.5rem; /* Reduce el espacio inferior del título */
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}

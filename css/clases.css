@@ -1,0 +1,189 @@
+/* Contenedor de la sección */
+.blog-header {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .blog-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 10px;
+  }
+  
+  .blog-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Botones de filtro */
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 30px 0;
+  }
+.tag {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Fondo degradado oscuro */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #ff5722; /* Borde naranja */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    border-radius: 30px; /* Bordes completamente redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+.tag:hover {
+    background: #ff5722; /* Fondo naranja al pasar el cursor */
+    color: #fff; /* Texto blanco */
+    transform: translateY(-3px) scale(1.1); /* Eleva y agranda ligeramente el botón */
+    box-shadow: 0 8px 16px rgba(255, 87, 34, 0.4); /* Sombra más pronunciada */
+}
+.tag.active {
+    background: #ff5722;
+    color: white;
+}
+  /* Grilla de cards */
+  .blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+  }
+  
+  /* Estilo de cada card */
+  .post {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .post:hover {
+    transform: translateY(-10px);
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .post-divider {
+    border: none;
+    height: 1px;
+    background: #333;
+    margin: 10px 20px;
+  }
+  
+  .post-content {
+    padding: 15px 20px;
+    color: #eee;
+    text-align: center;
+  }
+  
+  .post-content h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .post-content p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  /* Estilos generales */
+  .horarios {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #1f1f1f; /* Fondo oscuro */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); /* Sombra inicial */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.horarios:hover {
+    transform: translateY(10px); /* Desplaza hacia abajo al pasar el mouse */
+    box-shadow: 0 10px 40px rgba(255, 165, 0, 0.6); /* Sombra naranja al pasar el mouse */
+}
+
+.horarios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Contenedor de la tabla */
+.tabla-container {
+    overflow-x: auto;
+}
+/* Tabla */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    min-width: 700px;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    border: 2px solid #444; /* Borde alrededor de la tabla */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta bordes sobrantes */
+    box-shadow: inset 0 0 5px rgba(255, 165, 0, 0.4); /* Ajusta la sombra decorativa */
+}
+
+/* Encabezado de la tabla */
+.tabla-horarios thead th {
+    background-color: #1f1f1f;
+    color: #fff; /* Texto blanco */
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border: none; /* Elimina todas las líneas del encabezado */
+}
+.tabla-horarios thead th:last-child {
+    border-right: none; /* Elimina la línea de la última columna */
+}
+
+/* Filas del cuerpo de la tabla */
+.tabla-horarios tbody tr {
+    transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.tabla-horarios tbody tr:nth-child(odd) {
+    background-color: #2a2a2a; /* Fondo alternado para filas impares */
+}
+
+.tabla-horarios tbody tr:nth-child(even) {
+    background-color: #1f1f1f; /* Fondo alternado para filas pares */
+}
+
+.tabla-horarios tbody tr:hover {
+    background-color: #ff4d00; /* Fondo naranja al pasar el mouse */
+    color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+/* Celdas del cuerpo de la tabla */
+.tabla-horarios tbody td {
+    padding: 1rem;
+    text-align: center;
+    color: #ddd; /* Texto gris claro */
+    border-top: 1px solid #444; /* Línea divisoria entre filas */
+    border-right: 1px solid #444; /* Línea divisoria entre columnas */
+}
+
+.tabla-horarios tbody td:last-child {
+    border-right: none; /* Elimina la línea de la última columna */
+}

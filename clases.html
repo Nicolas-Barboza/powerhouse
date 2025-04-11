@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clases de Entrenamiento</title>
+  <head>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/clases.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/modo-claro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  </head>
+</head>
+<body class="modo-claro">
+  <div id="header-placeholder"></div>
+
+<div class="blog-header">
+  <h1>Clases de Entrenamiento</h1>
+  <p>Descubrí nuestras disciplinas y encontrá tu estilo</p>
+</div>
+
+<nav class="tags">
+  <button class="tag active" data-category="todos">Todos</button>
+  <button class="tag" data-category="musculación">Musculación</button>
+  <button class="tag" data-category="crossfit">CrossFit</button>
+  <button class="tag" data-category="yoga">Yoga</button>
+  <button class="tag" data-category="spinning">Spinning</button>
+</nav>
+
+<main class="clases-page blog-grid">
+  <article class="post" data-category="musculación">
+    <div class="post-image">
+      <img src="img/musculacion.png" alt="Musculación">
+    </div>
+    <hr class="post-divider">
+    <div class="post-content">
+      <h2>Musculación Avanzada</h2>
+      <p>Programas intensos para aumentar masa muscular de forma segura y efectiva.</p>
+    </div>
+  </article>
+
+  <article class="post" data-category="crossfit">
+    <div class="post-image">
+      <img src="img/crossfit.png" alt="CrossFit">
+    </div>
+    <hr class="post-divider">
+    <div class="post-content">
+      <h2>CrossFit Explosivo</h2>
+      <p>Mejorá tu resistencia, fuerza y agilidad con nuestras clases de alto impacto.</p>
+    </div>
+  </article>
+  <article class="post" data-category="yoga">
+    <div class="post-image">
+      <img src="img/yoga.png" alt="Yoga">
+    </div>
+    <hr class="post-divider">
+    <div class="post-content">
+      <h2>Yoga para el Alma</h2>
+      <p>Encontrá tu paz interior mientras fortalecés cuerpo y mente.</p>
+    </div>
+  </article>
+
+  <article class="post" data-category="spinning">
+    <div class="post-image">
+      <img src="img/spinning.png" alt="Spinning">
+    </div>
+    <hr class="post-divider">
+    <div class="post-content">
+      <h2>Spinning con Ritmo</h2>
+      <p>Pedaleá al ritmo de la música en clases llenas de energía.</p>
+    </div>
+  </article>
+
+  <article class="post" data-category="funcional">
+    <div class="post-image">
+      <img src="img/funcional.png" alt="Funcional">
+    </div>
+    <hr class="post-divider">
+    <div class="post-content">
+      <h2>Entrenamiento Funcional</h2>
+      <p>Mejorá tu rendimiento diario con ejercicios prácticos y completos.</p>
+    </div>
+  </article>
+</main>
+<section class="horarios">
+  <h2>Horarios Semanales</h2>
+  <div class="tabla-container">
+    <table class="tabla-horarios">
+      <thead>
+        <tr>
+          <th>DÍAS</th>
+          <th>MUSCULACIÓN</th>
+          <th>CROSSFIT</th>
+          <th>YOGA</th>
+          <th>SPINNING</th>
+          <th>FUNCIONAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>08:00 - 09:00</td>
+          <td>10:00 - 11:00</td>
+          <td>18:00 - 19:00</td>
+          <td>20:00 - 21:00</td>
+          <td>08:00 - 09:00</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>10:00 - 11:00</td>
+          <td>08:00 - 09:00</td>
+          <td>20:00 - 21:00</td>
+          <td>18:00 - 19:00</td>
+          <td>10:00 - 11:00</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>18:00 - 19:00</td>
+          <td>20:00 - 21:00</td>
+          <td>08:00 - 09:00</td>
+          <td>10:00 - 11:00</td>
+          <td>18:00 - 19:00</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>20:00 - 21:00</td>
+          <td>18:00 - 19:00</td>
+          <td>10:00 - 11:00</td>
+          <td>08:00 - 09:00</td>
+          <td>20:00 - 21:00</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>08:00 - 09:00</td>
+          <td>10:00 - 11:00</td>
+          <td>18:00 - 19:00</td>
+          <td>20:00 - 21:00</td>
+          <td>08:00 - 09:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/cargar-modulo.js"></script>
+<script src="js/modo.js"></script>
+<script src="js/filtro.js"></script>
+</body>
+</html>

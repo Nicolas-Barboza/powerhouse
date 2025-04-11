@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gimnasio - Página Principal</title>
+  <head>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/modo-claro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  </head>
+</head>
+<body class="modo-claro">
+  <div id="header-placeholder"></div>
+  <section class="hero">
+    <video autoplay muted loop id="video-fondo">
+      <source src="videos/video-gym.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+    <div class="hero-texto">
+      <h2>¡Transformá tu cuerpo hoy!</h2>
+      <p>Unite a los más de 10000 socios satisfechos</p>
+    </div>
+  </section>
+
+  <!-- CLASES DESTACADAS -->
+  <section class="clases-destacadas">
+    <div class="clases-destacadas-header">
+      <h2>Clases Destacadas</h2>
+      <p>Descubre nuestras clases más populares<br>diseñadas para ayudarte a alcanzar tus objetivos<br>y sumergete en esta increible experiencia..</p>
+    </div>
+    <div class="tarjetas-clases">
+      <a href="clases.html?clase=musculacion" class="card">
+
+        <img src="img/musculacion-gris.png" alt="Musculación">
+        <div class="card-content">
+          <h3>Musculación</h3>
+          <p>Entrenamientos de fuerza para desarrollar masa muscular y resistencia.</p>
+        </div>
+      </a>
+      <a href="clases.html#yoga" class="card">
+        <img src="img/yoga-gris.png" alt="Yoga">
+        <div class="card-content">
+          <h3>Yoga</h3>
+          <p>Conecta tu cuerpo y mente con nuestras sesiones de yoga.</p>
+        </div>
+      </a>
+      <a href="clases.html#spinning" class="card">
+        <img src="img/spinning-gris.png" alt="Spinning">
+        <div class="card-content">
+          <h3>Spinning</h3>
+          <p>Clases de ciclismo indoor para mejorar tu resistencia y fuerza.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTADOR ANIMADO -->
+  <section class="contador-section">
+    <div class="contador-box">
+        <div class="icono">
+            <img src="img/manos-estrechadas.png" alt="Icono 1" class="icono-img">
+        </div>
+        <span class="contador" data-target="10000">0</span><span class="simbolo">+</span>
+        <p>Clientes a los que hemos atendido</p>
+    </div>
+    <div class="contador-box">
+        <div class="icono">
+            <img src="img/like-icon.png" alt="Icono 2" class="icono-img">
+        </div>
+        <span class="contador" data-target="97">0</span><span class="simbolo">%</span>
+        <p>De nuestros clientes nos recomiendan</p>
+    </div>
+    <div class="contador-box">
+        <div class="icono">
+            <img src="img/brazo-flexionando.png" alt="Icono 3" class="icono-img">
+        </div>
+        <span class="contador" data-target="30">0</span><span class="simbolo">+</span>
+        <p>Años satisfaciendo las necesidades del cliente</p>
+    </div>
+</section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios">
+  
+    <div class="testimonio-carrusel">
+      <h2 class="title-comentario">Lo que dicen nuestros socios</h2>
+      <div class="testimonio activo">
+        <div class="testimonio-header">
+          <img src="https://cdn-icons-png.flaticon.com/64/149/149071.png" alt="Perfil" class="icono-perfil">
+          <div class="testimonio-info">
+            <strong>Carla</strong>
+            <div class="estrellas">★★★★★</div>
+          </div>
+        </div>
+        <p>“¡Mi lugar favorito para entrenar y relajarme!”</p>
+      </div>
+      <div class="testimonio">
+        <div class="testimonio-header">
+          <img src="https://cdn-icons-png.flaticon.com/64/149/149071.png" alt="Perfil" class="icono-perfil">
+          <div class="testimonio-info">
+            <strong>Diego</strong>
+            <div class="estrellas">★★★★☆</div>
+          </div>
+        </div>
+        <p>“Resultados en poco tiempo. ¡Gracias equipo!”</p>
+      </div>
+      <div class="testimonio">
+        <div class="testimonio-header">
+          <img src="https://cdn-icons-png.flaticon.com/64/149/149071.png" alt="Perfil" class="icono-perfil">
+          <div class="testimonio-info">
+            <strong>Lucía</strong>
+            <div class="estrellas">★★★★★</div>
+          </div>
+        </div>
+        <p>“Un ambiente increíble y entrenadores muy profesionales.”</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/cargar-modulo.js"></script>
+  <script src="js/modo.js"></script>
+  <script src="js/contador.js"></script>
+  <script src="js/testimonios.js"></script>
+</body>
+</body>
+</html>

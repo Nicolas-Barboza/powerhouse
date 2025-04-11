@@ -1,0 +1,213 @@
+/* Encabezado */
+.blog-header {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .blog-header h1 {
+    font-size: 3rem;
+    color: var(--texto-claro);
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 10px;
+  }
+  
+  .blog-header p {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  /* Filtros */
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 30px 0;
+  }
+  
+  .tag {
+    background: #222;
+    color: #fff;
+    border: 2px solid #ff5722;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tag:hover,
+  .tag.active {
+    background: #ff5722;
+    color: #fff;
+    transform: translateY(-3px) scale(1.1);
+  }
+  
+ /* Cards */
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.post {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 320px; /* Ajusta el ancho */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Centra el contenido */
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 87, 34, 0.6); /* Sombra más pronunciada */
+}
+
+.post img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura */
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.post-content {
+    padding: 1.5rem;
+    color: #eee;
+}
+
+.post-content h2 {
+    font-size: 1.5rem; /* Tamaño más grande */
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.post-content p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.post-content .categoria {
+    font-size: 0.9rem;
+    color: #ff5722; /* Color naranja */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.post-content .fecha {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+    display: block;
+}
+/* Contenedor de comentarios */
+.comments {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 10px; /* Bordes redondeados */
+    background: transparent; /* Fondo transparente para que coincida con el fondo del body */
+}
+
+/* Título de comentarios */
+.comments h2 {
+    font-size: 1.8rem; /* Tamaño del título */
+    color: #ffffff; /* Texto oscuro */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-weight: bold; /* Negrita */
+}
+/* Cada comentario */
+.comment {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 1rem; /* Espaciado entre avatar y contenido */
+    margin-bottom: 1.5rem; /* Espaciado entre comentarios */
+    padding: 1rem; /* Espaciado interno */
+    background: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor */
+.comment:hover {
+    transform: scale(1.05); /* Expande ligeramente el comentario */
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4); /* Sombra azul */
+}
+/* Contenido del comentario */
+.comment-content {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Encabezado del comentario */
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaciado entre elementos */
+    margin-bottom: 0.5rem;
+}
+
+.comment-header strong {
+    font-size: 1rem;
+    color: #333; /* Texto oscuro */
+}
+
+.comment-header .role {
+    background: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.comment-header .time {
+    font-size: 0.8rem;
+    color: #888; /* Texto gris */
+}
+
+/* Texto del comentario */
+.comment-content p {
+    font-size: 0.9rem;
+    color: #555; /* Texto gris oscuro */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Acciones del comentario */
+.comment-actions {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #888; /* Texto gris */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.comment-actions:hover {
+    color: #007bff; /* Cambia a azul al pasar el cursor */
+}
+/* Scroll Reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estado visible (animado) */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+}
+  

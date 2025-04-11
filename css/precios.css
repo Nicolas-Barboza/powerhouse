@@ -1,0 +1,189 @@
+/* ========== ESTILOS PARA PRECIOS ========== */
+.precios-container {
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 3rem; /* Espacio inferior */                               
+}
+
+.title-precios {
+    font-size: 2.5; /* Tamaño del título */
+    margin-top: -1rem; /* Menos espacio superior */
+    margin-bottom: 0.1rem; /* Menos espacio debajo del título */
+    color: #fdf7f7; /* Color destacado */
+    font-weight: bold; /* Negrita para resaltar */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Sombra para destacar */
+}
+
+/* Subtítulo de precios */
+.subtitulo-precio {
+    color: #ddd; /* Color gris claro */                                     
+    font-size: 1.5rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Palanca */
+.switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem; /* Espacio superior */                
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #fff; /* Color blanco */
+    text-align: center; /* Centra el texto */
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-switch:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider-switch {
+    background-color: #ff6600;
+}
+
+input:checked + .slider-switch:before {
+    transform: translateX(24px);
+}
+/* Tarjetas */
+.precios {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+/* Tarjetas de membresías */
+.card {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Fondo degradado */
+    border-radius: 1rem; /* Bordes redondeados */
+    padding: 2rem; /* Espaciado interno */
+    width: 280px; /* Ancho reducido */
+    height: auto; /* Ajusta la altura automáticamente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Oculta contenido que sobresalga */
+}
+.card:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0 12px 30px rgba(255, 140, 0, 0.4); /* Sombra más pronunciada */
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a); /* Fondo degradado al pasar el cursor */
+}
+/* Etiqueta del plan */
+.etiqueta-plan {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 0.8rem; /* Espaciado debajo de la etiqueta */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+/* Nombre del plan */
+.nombre-plan {
+    font-size: 1.5rem; /* Tamaño reducido */
+    font-weight: bold;
+    text-align: center; /* Centrado */
+    margin-bottom: 0.1rem; /* Espaciado debajo del nombre */
+    color: #fff; /* Texto blanco */
+}
+/* Precio */
+.precio {
+    margin: 0.5rem 0; /* Más espacio alrededor del precio */
+    font-size: 2rem; /* Tamaño más grande para el precio */
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    color: white;
+}
+.precio .tachado {
+    text-decoration: line-through;
+    color: #888;
+}
+.precio .oferta {
+    font-size: 2.2rem; /* Anual más grande */
+    color: #ffffff;
+    font-weight: bold;
+}
+.precio .descuento {
+    color: #ffffff;
+    font-size: 1rem;
+}
+/* Características */
+.caracteristicas {
+    font-size: 1rem; /* Tamaño del texto */
+    text-align: left; /* Alineado a la izquierda */
+    margin-top: 1rem;
+    list-style: none; /* Elimina los puntos */
+    padding: 0;
+}
+.caracteristicas li {
+    margin-bottom: 0.75rem; /* Más espacio entre las características */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.caracteristicas li::before {
+    content: "✔"; /* Tilde por defecto */
+    color: yellow; /* Color amarillo */
+    font-weight: bold;
+}
+.caracteristicas li.x::before {
+    content: "✖"; /* X para elementos con clase "x" */
+    color: red; /* Color rojo */
+    font-weight: bold;
+}
+/* Botón de ordenar */
+.btn-ordenar {
+    background: orange; /* Fondo naranja */
+    color: black; /* Texto negro */
+    font-weight: bold;
+    padding: 1rem 2rem; /* Botón más grande */
+    border: none;
+    border-radius: 999px; /* Bordes completamente redondeados */
+    cursor: pointer;
+    width: 100%; /* Botón ocupa todo el ancho */
+    margin-top: 1.5rem; /* Espaciado superior */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn-ordenar:hover {
+    background: #ff784e; /* Fondo más claro al pasar el cursor */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
